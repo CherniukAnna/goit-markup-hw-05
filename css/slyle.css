@@ -287,10 +287,9 @@ line-height: 1.2;
     visibility: visible;
     opacity: 1;
     background: rgba(0, 0, 0, 0.2);
+
+    transition: visibility 250ms var(--cubic), opacity 250ms var(--cubic);
     
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
 }
 
 .is-hidden.backdrop {
@@ -313,9 +312,6 @@ line-height: 1.2;
     border-radius: 4px;
     background-color:var(--white-color);
 
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
 }
 
 
